@@ -35,7 +35,7 @@ class Profit extends Component {
                 <div>
                     <table className='profittable'>
                         <tbody>
-                            <tr>
+                            <tr className='currhead'>
                                 <td colSpan='2'>{this.state.profit.currency}</td>
                             </tr>
                             <tr>

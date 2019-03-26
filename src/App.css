@@ -48,6 +48,7 @@ body #root {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .profitcontent{
@@ -79,4 +80,8 @@ body #root {
   text-align: center;
   border: 1px solid rgb(226, 236, 245);;
   padding: 17px;  
+}
+
+.currhead{
+  font-weight: bold;
 }

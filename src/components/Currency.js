@@ -20,7 +20,7 @@ const Currency = (props) => {
         imgView = <img src={litLogo} alt={props.symbol} />;
     }
 
-    const toLink = "/profit/" + props.symbol + '/' + props.symbol;
+    const toLink = "/profit/" + props.symbol + "/" + props.symbol;
 
     return (
         <NavLink to={toLink} activeClassName='active'>
