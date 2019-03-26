@@ -1,33 +1,82 @@
-.App {
+body #root {
+  width: 94%;
+  margin: 0 auto;
+}
+
+.currency {  
+  width: 335px;
+  height: 70px;
+  margin: 1px 1px;
+  border: 1px solid rgba(226, 236, 245, 0.68);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.imgdiv {
+  height: 95%;
+}
+.imgdiv img {
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+
+.profit {
+  height: 300px;
+  border: 1px solid grey;
+  border-radius: 10px;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.items {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.items a {
+  color: rgb(255, 255, 255);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.items a:hover,
+  .items a:active,
+  .items a.active {
+    background-color: rgba(226, 236, 245, 0.34);
   }
-  to {
-    transform: rotate(360deg);
+
+.all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profitcontent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  width: 358px;
+}
+
+@media (min-width: 500px) {
+  .items {
+      flex-direction: row;
   }
+  .profitcontent{
+    width: auto;
+  }
+  .currency{
+    width: 28.5vw;
+    height: 6vw;
+  }
+}
+
+.profittable{
+  margin: auto;
+}
+
+.profittable td{
+  text-align: center;
+  border: 1px solid rgb(226, 236, 245);;
+  padding: 17px;  
 }
