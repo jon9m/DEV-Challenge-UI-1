@@ -29,7 +29,7 @@ class App extends Component {
 
 
     const symbols = this.state.symbols;
-    let currencies = <p>No currencies available!'</p>;
+    let currencies = <p>No currency available!'</p>;
     if (symbols) {
       currencies = symbols.map(curr => {
         return <Currency symbol={curr} key={curr} />

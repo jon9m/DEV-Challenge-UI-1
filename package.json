@@ -2,6 +2,7 @@
   "name": "currencyui",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/currencyui",
   "dependencies": {
     "axios": "^0.18.0",
     "react": "^16.8.5",
